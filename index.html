@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Automotive Maintenance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">AUTO<span>MAINTENANCE</span></div>
+        <div class="nav-links" id="navLinks">
+            <a href="#about" class="hover:text-red-600 transition">About</a>
+            <a href="#services" class="hover:text-red-600 transition">Tips</a>
+            <a href="#tools" class="hover:text-red-600 transition">Tools</a>
+            <a href="#contact" class="btn-primary">Contact</a>
+        </div>
+        <div class="md:hidden text-red-600 cursor-pointer" id="menuIcon">
+            <i class="fas fa-bars text-xl"></i>
+        </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-overlay">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=2000" alt="Engine Background">
+    </div>
+    <div class="hero-content">
+        <span class="badge">Vehicle Care 101</span>
+        <h1 class="text-3xl md:text-5xl lg:text-7xl font-black uppercase">Basic Automotive <br><span class="text-red-600">Maintenance</span></h1>
+        <p class="text-sm md:text-lg max-w-xl mx-auto opacity-90 mt-4 px-4">Keep your car safe, reliable, and running smoothly</p>
+        <div class="cta-group">
+            <a href="#services" class="btn-main">View Tips</a>
+            <a href="#tools" class="btn-outline">Tools</a>
+        </div>
+    </div>
+  </header>
+
+  <div class="marquee">
+    <div class="marquee-content">• OIL CHANGE • TIRE CHECK • BRAKE INSPECTION • BATTERY CARE •</div>
+    <div class="marquee-content">• OIL CHANGE • TIRE CHECK • BRAKE INSPECTION • BATTERY CARE •</div>
+    <div class="marquee-content">• OIL CHANGE • TIRE CHECK • BRAKE INSPECTION • BATTERY CARE •</div>
+    <div class="marquee-content">• OIL CHANGE • TIRE CHECK • BRAKE INSPECTION • BATTERY CARE •</div>
+  </div>
+
+  <section id="about" class="section">
+    <div class="pillar-flex">
+        <div class="text-block">
+            <h2 class="text-3xl md:text-4xl font-black uppercase">Why <span class="text-red-600">Maintenance</span> Matters</h2>
+            <p class="mt-4 text-slate-600 leading-relaxed">
+              Regular car maintenance helps prevent breakdowns, improves safety,
+              saves money, and extends the life of your vehicle.
+            </p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-desc">Reliability</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">$$$</div>
+                    <div class="stat-desc">Money Saved</div>
+                </div>
+            </div>
+        </div>
+        <div class="image-block mt-10 lg:mt-0">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" class="img-bottom hidden md:block" alt="Car Care">
+        </div>
+    </div>
+  </section>
+
+  
+
+  <section id="services" class="bg-black text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center uppercase tracking-tighter">Basic Maintenance Tasks</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="tips-card">
+            <div class="icon-box"><i class="fas fa-oil-can"></i></div>
+            <h3 class="font-bold text-lg uppercase">Oil Change</h3>
+            <p class="text-sm text-slate-400 mt-2">Keep the engine lubricated and running efficiently.</p>
+          </div>
+          <div class="tips-card">
+            <div class="icon-box"><i class="fas fa-gauge-high"></i></div>
+            <h3 class="font-bold text-lg uppercase">Tire Check</h3>
+            <p class="text-sm text-slate-400 mt-2">Ensure proper tire pressure and tread condition.</p>
+          </div>
+          <div class="tips-card">
+            <div class="icon-box"><i class="fas fa-stop-circle"></i></div>
+            <h3 class="font-bold text-lg uppercase">Brake Inspection</h3>
+            <p class="text-sm text-slate-400 mt-2">Check brake pads and fluid for safe stopping.</p>
+          </div>
+          <div class="tips-card">
+            <div class="icon-box"><i class="fas fa-car-battery"></i></div>
+            <h3 class="font-bold text-lg uppercase">Battery Care</h3>
+            <p class="text-sm text-slate-400 mt-2">Inspect battery terminals and charge level.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="tools" class="section bg-slate-50">
+    <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center uppercase">Essential <span class="text-red-600">Tools</span></h2>
+    <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+      <div class="tool-card min-w-[140px]">
+        <i class="fas fa-wrench text-red-600 text-xl mb-2"></i>
+        <h4 class="font-bold text-xs uppercase">Wrench set</h4>
+      </div>
+      <div class="tool-card min-w-[140px]">
+        <i class="fas fa-car text-red-600 text-xl mb-2"></i>
+        <h4 class="font-bold text-xs uppercase">Car jack & stands</h4>
+      </div>
+      <div class="tool-card min-w-[140px]">
+        <i class="fas fa-tachometer-alt text-red-600 text-xl mb-2"></i>
+        <h4 class="font-bold text-xs uppercase">Tire gauge</h4>
+      </div>
+      <div class="tool-card min-w-[140px]">
+        <i class="fas fa-tools text-red-600 text-xl mb-2"></i>
+        <h4 class="font-bold text-xs uppercase">Filter wrench</h4>
+      </div>
+      <div class="tool-card min-w-[140px]">
+        <i class="fas fa-hands-bubbles text-red-600 text-xl mb-2"></i>
+        <h4 class="font-bold text-xs uppercase">Safety gloves</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section text-center">
+    <div class="contact-container max-w-xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-black uppercase mb-4">Get in Touch</h2>
+        <p class="text-slate-600 mb-8">Have questions about car maintenance?</p>
+        <button class="btn-submit">Contact Us</button>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-12 text-center border-t-4 border-red-600">
+    <p class="text-xs opacity-50 uppercase tracking-widest font-bold">© 2026 Basic Automotive Maintenance</p>
+  </footer>
+
+  <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const navLinks = document.getElementById('navLinks');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Closes the menu when a link is clicked (useful for mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
